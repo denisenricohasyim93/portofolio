@@ -1,0 +1,146 @@
+.App-contact {
+    height: 685px;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    animation: bg 0.5s;
+}
+
+.jumboTron {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.h1-jumbotron{
+    margin-left: 10px;
+    color: grey;
+    font-family: 'Open Sans';
+    font-weight: 900;
+    font-size: 80px;
+    letter-spacing: -3px;
+    opacity: 1;
+    margin-left: 0px;
+    animation: spacings 1s;
+}
+
+.jumboTron div{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.contact{
+    height: 500px;
+    width: 930px;
+    background-color: rgb(221, 221, 221);
+    animation: rights 1s;
+    margin-right: 0px;
+    opacity: 1;
+    border: 10px solid rgb(215, 215, 215);
+    border-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact h4{
+    margin-left: 23px;
+    font-style: italic;
+    width: 400px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    color: grey;
+    opacity: 0.7;
+    animation: h4 1s;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 500px;
+    animation: socmed 1s;
+    margin-left: 0px;
+}
+
+.socialMedia div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    width: 150px;
+    height: 90px;
+    margin-left: -110px;
+    border: 5px solid rgb(215, 215, 215);
+    border-left: 0px;
+    transition: margin-left 0.5s;
+}
+
+.socialMedia h4, i{
+    color: grey;
+    padding: 10px;
+}
+
+.socialMedia a{
+    color: grey;
+    text-decoration: none;
+    letter-spacing: 0px;
+    transition: letter-spacing 0.5s;
+}
+
+.socialMedia a:hover{
+    letter-spacing: 1px;
+}
+
+.socialMedia div:hover{
+    margin-left: 0px;
+}
+
+.small{
+    font-size: 14px;
+}
+
+/* Animation */
+.App-contact-bg {
+    height: 685px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+@keyframes rights {
+    from { opacity: 0; margin-right: -600px; }
+    to { opacity: 1; margin-right: 0px; }
+}
+
+@keyframes spacings {
+    50% { opacity: 0; letter-spacing: 20px }
+    100% { opacity: 1; letter-spacing: -3px }
+}
+
+@keyframes h4 {
+    50% { opacity: 0 }
+    100% { opacity: 0.7 }
+}
+
+@keyframes bg{
+    from { background-color: black }
+    to { background-color: white }
+}
+
+@keyframes socmed{
+    from { margin-left: -180px }
+    to { margin-left: 0px }
+}
